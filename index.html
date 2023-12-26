@@ -16,7 +16,11 @@
     <!-- Main Section Start -->
     <main>
       <!-- 1st Form Section Start -->
-      <form class="max-w-2xl bg-[#EF5455] mx-auto my-16 rounded-md" name="courierForm">
+      <form
+        class="max-w-2xl bg-[#EF5455] mx-auto my-16 rounded-md"
+        name="courierForm"
+        id="courierForm"
+      >
         <div class="flex justify-between items-center py-8">
           <div class="flex space-x-2 px-5">
             <!-- Title Section -->
@@ -67,25 +71,29 @@
         </div>
         <!-- First Name and Second Name -->
         <div class="px-5 space-y-5">
-          <div class="flex space-x-8">
-            <input
-              type="text"
-              id="firstName"
-              name="firstName"
-              class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-md focus:border-yellow-400 w-full p-2 focus:bg-slate-100 outline-none fullName"
-              placeholder="First Name"
-              value=""
-              required
-            />
-            <input
-              type="text"
-              id="lastName"
-              name="lastName"
-              class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-md focus:border-yellow-400 w-full p-2 focus:bg-slate-100 outline-none fullName"
-              placeholder="Last Name"
-              value=""
-              required
-            />
+          <div class="grid grid-cols-2 space-x-4">
+            <div>
+              <input
+                type="text"
+                id="firstName"
+                name="firstName"
+                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-md focus:border-yellow-400 w-full p-2 focus:bg-slate-100 outline-none fullName"
+                placeholder="First Name"
+                value=""
+                required
+              />
+            </div>
+            <div>
+              <input
+                type="text"
+                id="lastName"
+                name="lastName"
+                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-md focus:border-yellow-400 w-full p-2 focus:bg-slate-100 outline-none fullName"
+                placeholder="Last Name"
+                value=""
+                required
+              />
+            </div>
           </div>
           <!-- Mobile No -->
           <div>
@@ -93,7 +101,6 @@
               type="text"
               id="mobileNumber"
               name="mobileNumber"
-              
               class="bg-gray-50 border border-gray-300 text-gray-600 text-sm rounded-md focus:border-yellow-400 w-full p-2 focus:bg-slate-100 outline-none fullName"
               placeholder="Mobile Number"
               value=""
@@ -127,7 +134,9 @@
           </div>
           <!-- Button -->
           <div class="pb-5">
-            <button name="createPickup" id = "createPickup"
+            <button type="submit"
+              name="createPickup"
+              id="createPickup"
               class="bg-[#2B3252] rounded-md py-2 px-6 font-base text-white border-2 hover:bg-blue-950 hover:text-gray-200 focus:border-yellow-400"
             >
               Create Pickup
@@ -159,80 +168,118 @@
         </div>
         <!-- Table Div -->
         <div class="py-8">
-          <table class="table-fixed w-full text-white bg-[#2B3252] rounded-sm border-2 border-gray-200">
+          <table
+            class="table-fixed w-full text-white bg-[#2B3252] rounded-sm border-2 border-gray-200"
+          >
             <!-- Heading Row -->
             <tr>
-              <th class="p-2 font-normal border-2 border-gray-200">Customer Name</th>
-              <th class="p-2 font-normal border-2 border-gray-200">Mobile Number</th>
+              <th class="p-2 font-normal border-2 border-gray-200">
+                Customer Name
+              </th>
+              <th class="p-2 font-normal border-2 border-gray-200">
+                Mobile Number
+              </th>
               <th class="p-2 font-normal border-2 border-gray-200">Address</th>
               <th class="p-2 font-normal border-2 border-gray-200">Edit</th>
             </tr>
             <!-- Name Row -->
             <tr>
-              <th class="p-2 font-thin border-2 border-gray-200">Abi Thetchana</th>
+              <th class="p-2 font-thin border-2 border-gray-200">
+                Abi Thetchana
+              </th>
               <th class="p-2 font-thin border-2 border-gray-200">9876453210</th>
               <th class="p-2 font-thin border-2 border-gray-200">Chennai</th>
               <th class="p-2 font-base border-2 border-gray-200">
-                <button class="bg-[#FAD744] rounded-md text-xs px-2 text-[#2B3252] hover:bg-yellow-400">
+                <button
+                  class="bg-[#FAD744] rounded-md text-xs px-2 text-[#2B3252] hover:bg-yellow-400"
+                >
                   Update
                 </button>
-                <button class="bg-red-600 hover:bg-red-700 rounded-md text-xs px-2">
+                <button
+                  class="bg-red-600 hover:bg-red-700 rounded-md text-xs px-2"
+                >
                   Delete
                 </button>
               </th>
             </tr>
             <!-- Name Row 2 -->
             <tr>
-              <th class="p-2 font-thin border-2 border-gray-200">Shajid Safee</th>
+              <th class="p-2 font-thin border-2 border-gray-200">
+                Shajid Safee
+              </th>
               <th class="p-2 font-thin border-2 border-gray-200">9876453287</th>
               <th class="p-2 font-thin border-2 border-gray-200">Sri Lanka</th>
               <th class="p-2 font-base border-2 border-gray-200">
-                <button class="bg-[#FAD744] rounded-md text-xs px-2 text-[#2B3252] hover:bg-yellow-400">
+                <button
+                  class="bg-[#FAD744] rounded-md text-xs px-2 text-[#2B3252] hover:bg-yellow-400"
+                >
                   Update
                 </button>
-                <button class="bg-red-600 hover:bg-red-700 rounded-md text-xs px-2">
+                <button
+                  class="bg-red-600 hover:bg-red-700 rounded-md text-xs px-2"
+                >
                   Delete
                 </button>
               </th>
             </tr>
             <!-- Name Row 3 -->
             <tr>
-              <th class="p-2 font-thin border-2 border-gray-200">Yogha Raj Dhayal</th>
+              <th class="p-2 font-thin border-2 border-gray-200">
+                Yogha Raj Dhayal
+              </th>
               <th class="p-2 font-thin border-2 border-gray-200">9876476200</th>
               <th class="p-2 font-thin border-2 border-gray-200">Ramnad</th>
               <th class="p-2 font-base border-2 border-gray-200">
-                <button class="bg-[#FAD744] rounded-md text-xs px-2 text-[#2B3252] hover:bg-yellow-400">
+                <button
+                  class="bg-[#FAD744] rounded-md text-xs px-2 text-[#2B3252] hover:bg-yellow-400"
+                >
                   Update
                 </button>
-                <button class="bg-red-600 hover:bg-red-700 rounded-md text-xs px-2">
+                <button
+                  class="bg-red-600 hover:bg-red-700 rounded-md text-xs px-2"
+                >
                   Delete
                 </button>
               </th>
             </tr>
             <!-- Name Row 4 -->
             <tr>
-              <th class="p-2 font-thin border-2 border-gray-200">Muthu Akalya</th>
+              <th class="p-2 font-thin border-2 border-gray-200">
+                Muthu Akalya
+              </th>
               <th class="p-2 font-thin border-2 border-gray-200">9876478762</th>
-              <th class="p-2 font-thin border-2 border-gray-200">Thirunelveli</th>
+              <th class="p-2 font-thin border-2 border-gray-200">
+                Thirunelveli
+              </th>
               <th class="p-2 font-base border-2 border-gray-200">
-                <button class="bg-[#FAD744] rounded-md text-xs px-2 text-[#2B3252] hover:bg-yellow-400">
+                <button
+                  class="bg-[#FAD744] rounded-md text-xs px-2 text-[#2B3252] hover:bg-yellow-400"
+                >
                   Update
                 </button>
-                <button class="bg-red-600 hover:bg-red-700 rounded-md text-xs px-2">
+                <button
+                  class="bg-red-600 hover:bg-red-700 rounded-md text-xs px-2"
+                >
                   Delete
                 </button>
               </th>
             </tr>
             <!-- Name Row 5 -->
             <tr>
-              <th class="p-2 font-thin border-2 border-gray-200">Mohamed Muskir</th>
+              <th class="p-2 font-thin border-2 border-gray-200">
+                Mohamed Muskir
+              </th>
               <th class="p-2 font-thin border-2 border-gray-200">9876476888</th>
               <th class="p-2 font-thin border-2 border-gray-200">Sri Lanka</th>
               <th class="p-2 font-base border-2 border-gray-200">
-                <button class="bg-[#FAD744] rounded-md text-xs px-2 text-[#2B3252] hover:bg-yellow-400">
+                <button
+                  class="bg-[#FAD744] rounded-md text-xs px-2 text-[#2B3252] hover:bg-yellow-400"
+                >
                   Update
                 </button>
-                <button class="bg-red-600 hover:bg-red-700 rounded-md text-xs px-2">
+                <button
+                  class="bg-red-600 hover:bg-red-700 rounded-md text-xs px-2"
+                >
                   Delete
                 </button>
               </th>

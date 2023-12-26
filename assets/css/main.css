@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.form-error{
+    @apply text-base  text-white m-1 bg-gray-800 rounded-lg px-3
+}
